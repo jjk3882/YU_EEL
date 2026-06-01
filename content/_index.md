@@ -28,15 +28,13 @@ sections:
         gradient_mesh:
           enable: true
 
-# 1.5. Professor (교수 소개) 구역 - 꼬임 해결 버전
+# 1.5. Professor (교수 소개) 구역
   - block: resume-biography-3
     id: about
     content:
-      username: "shin-kiyeol"  # 🌟 교수님 폴더 이름과 완벽하게 일치시켰습니다!
+      username: "admin"
       text: ''
-      button:
-        text: "Download CV"
-        url: "uploads/cv.pdf"
+      # 🌟 Download CV 버튼 구역을 완전히 제거했습니다.
       headings:
         about: 'Professional Summary'
         education: 'Education'
@@ -44,8 +42,9 @@ sections:
     design:
       columns: '1'
       background:
+        # 배경을 사진처럼 깔끔한 흰색/연회색 톤으로 정돈합니다.
         gradient_mesh:
-          enable: true
+          enable: false
 
   # 2. Members (연구원 소개) 구역
   - block: markdown
