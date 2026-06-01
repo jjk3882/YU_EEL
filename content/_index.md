@@ -28,22 +28,58 @@ sections:
         gradient_mesh:
           enable: true
 
-  # 1.5. Professor (교수 소개) 구역 - 정석 파일 연동 버전
-  - block: resume-biography-3
+  # 1.5. Professor (교수 소개) 구역 - 버그 및 태그 노출 완벽 우회 버전
+  - block: markdown
     id: about
     content:
-      # 🌟 유저님이 이미 만들어두신 content/authors/admin 폴더를 자석처럼 정확히 연결합니다!
-      username: admin
-      text: ''
-      # 🌟 Download CV 버튼 제거 완료
-      headings:
-        about: 'Professional Summary'
-        education: 'Education'
-        interests: 'Interests'
+      title: 'Professor'
+      subtitle: ''
+      text: |
+        <div style="display: flex; gap: 50px; margin-top: 30px; align-items: flex-start; text-align: left; flex-wrap: wrap;">
+          <!-- 왼쪽: 프로필 사진 및 성함 -->
+          <div style="flex: 1; min-width: 250px; text-align: center;">
+            <img src="uploads/professor.jpg" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Shin Ki-yeol">
+            <h2 style="font-size: 1.8rem; margin-top: 15px; margin-bottom: 5px; color: #222; font-weight: 700;">Shin Ki-yeol (신기열)</h2>
+            <p style="color: #666; margin-bottom: 15px;">Professor of Mechanical Engineering</p>
+            <p style="color: #888; font-size: 0.9rem; margin-bottom: 20px;">Yeungnam University</p>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+              <a href="mailto:교수님메일@yu.ac.kr" style="width: 40px; height: 40px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); color: #444; text-decoration: none;">✉️</a>
+              <a href="https://scholar.google.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); color: #444; text-decoration: none; font-weight: bold;">G</a>
+            </div>
+          </div>
+          <!-- 오른쪽: 요약, 학력, 연구분야 -->
+          <div style="flex: 2; min-width: 300px;">
+            <h3 style="font-size: 1.4rem; color: #222; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-bottom: 15px; font-weight: 600;">📝 Professional Summary</h3>
+            <p style="line-height: 1.8; color: #444; margin-bottom: 30px;">
+              신기열 교수님은 영남대학교 기계공학부 에너지공학 연구실(EEL)의 지도교수로서, 고도화된 열관리 및 에너지 시스템 설계, 엔지니어링 시뮬레이션 해석 분야의 최첨단 국책 과제 및 산학 연구를 총괄하고 계십니다.
+            </p>
+            <h3 style="font-size: 1.4rem; color: #222; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-bottom: 15px; font-weight: 600;">🎓 Education</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px;">
+              <div style="background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                <strong style="color: #222; display: block; margin-bottom: 5px;">Ph.D. in Mechanical Engineering</strong>
+                <span style="font-size: 0.9rem; color: #666;">영남대학교 (2012)</span>
+              </div>
+              <div style="background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                <strong style="color: #222; display: block; margin-bottom: 5px;">M.S. in Mechanical Engineering</strong>
+                <span style="font-size: 0.9rem; color: #666;">영남대학교 (2008)</span>
+              </div>
+              <div style="background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                <strong style="color: #222; display: block; margin-bottom: 5px;">B.S. in Mechanical Engineering</strong>
+                <span style="font-size: 0.9rem; color: #666;">영남대학교 (2006)</span>
+              </div>
+            </div>
+            <h3 style="font-size: 1.4rem; color: #222; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-bottom: 15px; font-weight: 600;">✨ Interests</h3>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <span style="background: #fff; padding: 6px 15px; border-radius: 20px; font-size: 0.9rem; color: #444; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #e8e8e8;">Thermal Management</span>
+              <span style="background: #fff; padding: 6px 15px; border-radius: 20px; font-size: 0.9rem; color: #444; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #e8e8e8;">Energy Systems Simulation</span>
+              <span style="background: #fff; padding: 6px 15px; border-radius: 20px; font-size: 0.9rem; color: #444; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #e8e8e8;">Advanced Thermal Stress Analysis</span>
+              <span style="background: #fff; padding: 6px 15px; border-radius: 20px; font-size: 0.9rem; color: #444; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #e8e8e8;">Fluid & Thermal Engineering</span>
+            </div>
+          </div>
+        </div>
     design:
       columns: '1'
       background:
-        # 배경을 사진처럼 깔끔한 단색 톤으로 정돈합니다.
         gradient_mesh:
           enable: false
 
