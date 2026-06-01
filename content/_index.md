@@ -29,7 +29,7 @@ sections:
           enable: true
 
   # 2. Members (연구원 소개) 구역
-  - block: collection
+- block: collection
     id: people
     content:
       title: 'Members'
