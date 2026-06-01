@@ -83,7 +83,7 @@ sections:
       count: 50
       filters:
         folders:
-          - publication
+          - publications
       view: citation
     design:
       columns: '1'
