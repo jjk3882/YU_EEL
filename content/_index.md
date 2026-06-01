@@ -5,6 +5,7 @@ date: 2026-06-01
 type: landing
 
 sections:
+  # 1. 메인 소개 대문 구역
   - block: markdown
     content:
       title: 'Energy Engineering Laboratory (EEL)'
@@ -26,4 +27,64 @@ sections:
       background:
         gradient_mesh:
           enable: true
+
+  # 2. Members (연구원 소개) 구역
+  - block: collection
+    id: people
+    content:
+      title: 'Members'
+      subtitle: 'Our Research Team'
+      text: ''
+      count: 50
+      filters:
+        folders:
+          - authors
+      view: card
+    design:
+      columns: '1'
+
+  # 3. Research (연구 과제/프로젝트) 구역
+  - block: collection
+    id: projects
+    content:
+      title: 'Research'
+      subtitle: 'Projects & Laboratory Interests'
+      text: ''
+      count: 50
+      filters:
+        folders:
+          - project
+      view: card
+    design:
+      columns: '1'
+
+  # 4. Lectures (강의 자료/Teaching) 구역
+  - block: collection
+    id: experience
+    content:
+      title: 'Lectures'
+      subtitle: 'Academic Courses & Teaching'
+      text: ''
+      count: 50
+      filters:
+        folders:
+          - experience
+      view: card
+    design:
+      columns: '1'
+
+  # 5. Publications (논문 및 발표자료) 구역
+  - block: collection
+    id: publications
+    content:
+      title: 'Publications'
+      subtitle: 'Recent Research Papers & Presentations'
+      text: ''
+      count: 50
+      filters:
+        folders:
+          - publication
+      view: citation
+    design:
+      columns: '1'
 ---
