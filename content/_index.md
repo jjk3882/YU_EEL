@@ -28,8 +28,8 @@ sections:
         gradient_mesh:
           enable: true
 
-  # 2. Members (연구원 소개) 구역
-- block: collection
+  # 2. Members (연구원 소개) 구역 - 4명 일렬 나열 버전
+  - block: collection
     id: people
     content:
       title: 'Members'
