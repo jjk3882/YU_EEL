@@ -28,20 +28,71 @@ sections:
         gradient_mesh:
           enable: true
 
-  # 2. Members (연구원 소개) 구역 - 4명 일렬 나열 버전
-  - block: collection
+  # 2. Members (연구원 소개) 구역 - 2번 이미지 스타일 완벽 복제
+  - block: markdown
     id: people
     content:
       title: 'Members'
-      subtitle: 'Our Research Team'
-      text: ''
-      count: 50
-      filters:
-        folders:
-          - authors
-      view: card
-    design:
-      columns: '1'
+      subtitle: ''
+      text: |-
+        ## Research Prof. & Post Doc.
+
+        <div style="display: flex; gap: 30px; margin-top: 30px; margin-bottom: 45px; align-items: flex-start; text-align: left;">
+          <img src="uploads/liu-jie.jpg" style="width: 160px; border: 1px solid #ddd; border-radius: 4px;" alt="Liu Jie">
+          <div style="line-height: 1.9;">
+            <strong style="font-size: 1.25rem; color: #222;">Liu Jie (박사), Ph.D.</strong>
+            <ul style="list-style-type: '☉ '; padding-left: 20px; margin-top: 10px; color: #444;">
+              <li><b>Research Topic :</b> 여기에 연구 분야/주제를 입력하세요.</li>
+              <li><b>Email :</b> liujie@example.com</li>
+              <li><b>TEL :</b> 053-810-XXXX</li>
+              <li><b>Location :</b> 기계관 XXX호</li>
+              <li>PhD, Mechanical Engineering, XX University (202X)</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr style="border: 0; height: 1px; background: #eee; margin-bottom: 40px;">
+
+        ## Undergraduate Researchers
+
+        <div style="display: flex; gap: 30px; margin-bottom: 45px; align-items: flex-start; text-align: left;">
+          <img src="uploads/student1.jpg" style="width: 160px; border: 1px solid #ddd; border-radius: 4px;" alt="Student 1">
+          <div style="line-height: 1.9;">
+            <strong style="font-size: 1.25rem; color: #222;">학부연구생 1 (이름 입력)</strong>
+            <ul style="list-style-type: '☉ '; padding-left: 20px; margin-top: 10px; color: #444;">
+              <li><b>Research Topic :</b> 여기에 참여 연구 과제를 입력하세요.</li>
+              <li><b>Email :</b> student1@gmail.com</li>
+              <li><b>TEL :</b> 010-XXXX-XXXX</li>
+              <li><b>Location :</b> 기계관 XXX호</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 30px; margin-bottom: 45px; align-items: flex-start; text-align: left;">
+          <img src="uploads/student2.jpg" style="width: 160px; border: 1px solid #ddd; border-radius: 4px;" alt="Student 2">
+          <div style="line-height: 1.9;">
+            <strong style="font-size: 1.25rem; color: #222;">학부연구생 2 (이름 입력)</strong>
+            <ul style="list-style-type: '☉ '; padding-left: 20px; margin-top: 10px; color: #444;">
+              <li><b>Research Topic :</b> 여기에 참여 연구 과제를 입력하세요.</li>
+              <li><b>Email :</b> student2@gmail.com</li>
+              <li><b>TEL :</b> 010-XXXX-XXXX</li>
+              <li><b>Location :</b> 기계관 XXX호</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 30px; margin-bottom: 45px; align-items: flex-start; text-align: left;">
+          <img src="uploads/student3.jpg" style="width: 160px; border: 1px solid #ddd; border-radius: 4px;" alt="Student 3">
+          <div style="line-height: 1.9;">
+            <strong style="font-size: 1.25rem; color: #222;">학부연구생 3 (이름 입력)</strong>
+            <ul style="list-style-type: '☉ '; padding-left: 20px; margin-top: 10px; color: #444;">
+              <li><b>Research Topic :</b> 여기에 참여 연구 과제를 입력하세요.</li>
+              <li><b>Email :</b> student3@gmail.com</li>
+              <li><b>TEL :</b> 010-XXXX-XXXX</li>
+              <li><b>Location :</b> 기계관 XXX호</li>
+            </ul>
+          </div>
+        </div>
 
   # 3. Research (연구 과제/프로젝트) 구역
   - block: collection
