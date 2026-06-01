@@ -12,6 +12,5 @@ url_pdf: "presentation.pdf"
 
 ### 📊 Presentation Slides
 
-```{ .html }
 <!-- 웹사이트 안에서 바로 넘겨볼 수 있는 슬라이드 뷰어입니다 -->
 <iframe src="presentation.pdf" width="100%" height="600px" style="border: none;"></iframe>
