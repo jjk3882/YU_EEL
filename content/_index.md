@@ -28,16 +28,15 @@ sections:
         gradient_mesh:
           enable: true
 
-  # 1.5. Professor (교수 소개) 구역 - 1번 사진 스타일 완벽 연동
+# 1.5. Professor (교수 소개) 구역 - 꼬임 해결 버전
   - block: resume-biography-3
     id: about
     content:
-      # 🌟 content/authors/ 밑에 있는 교수님 폴더 이름(admin 또는 me)을 적어줍니다.
-      username: admin
+      username: "shin-kiyeol"  # 🌟 교수님 폴더 이름과 완벽하게 일치시켰습니다!
       text: ''
       button:
-        text: Download CV
-        url: uploads/cv.pdf
+        text: "Download CV"
+        url: "uploads/cv.pdf"
       headings:
         about: 'Professional Summary'
         education: 'Education'
