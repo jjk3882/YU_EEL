@@ -1,5 +1,4 @@
 ---
-# 홈메인 페이지 설정
 title: 'Energy Engineering Laboratory'
 summary: ''
 date: 2026-06-01
