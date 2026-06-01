@@ -1,7 +1,7 @@
 ---
 title: "An Analysis of Engineering System and Thermal Management Simulation"
-date: 2026-06-01
-publishDate: 2026-06-01
+date: 2026-05-01
+publishDate: 2026-05-01
 authors:
   - admin
 publication_types: ["1"]
